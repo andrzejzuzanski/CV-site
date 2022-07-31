@@ -7,3 +7,13 @@ window.addEventListener("click", function () {
   mainContainer.classList.remove("hidden");
   mainContainer.classList.add("slide-top");
 });
+
+const profile = document.querySelector(".profile");
+const profileContainer = document.querySelector(".profile-container");
+const profileArrow = document.querySelector(".arrow");
+
+profile.addEventListener("click", function () {
+    profileContainer.classList.toggle("profile-height");
+    profileArrow.style.transform += "rotate(180deg)";
+    profileArrow.style.transition = "transform 1s ";
+});  
