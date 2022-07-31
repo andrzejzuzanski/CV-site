@@ -6,20 +6,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   height: 100vh;
 }
 .welcome-container {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 30vw;
-  height: 30vh;
+  height: auto;
   position: absolute;
+  cursor: pointer;
+}
+.welcome-container h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+}
+.welcome-container span {
+  font-size: 4.4rem;
+  font-weight: 900;
+}
+.welcome-container p {
+  font-family: "Roboto Slab", serif;
+  text-align: end;
+  font-size: 1.2rem;
+  margin-bottom: 0;
 }
 main {
   background-color: #00171f;
-  width: 80vw;
-  height: 80vh;
+  width: 90vw;
+  height: 90vh;
   border-radius: 3rem;
+  box-shadow: -20px 24px 37px -16px rgba(0, 23, 31, 1);
 }
 
 .hidden {
@@ -27,7 +47,79 @@ main {
 }
 .visible {
   visibility: visible;
-  transition: visibility 1s;
+}
+
+/* Mobile breakpoints */
+
+@media only screen and (max-width: 576px) {
+  .welcome-container {
+    width: 60vw;
+  }
+  .welcome-container h1 {
+    font-size: 3rem;
+  }
+  .welcome-container span {
+    font-size: 3.5rem;
+  }
+  .welcome-container p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .welcome-container {
+    width: 50vw;
+  }
+  .welcome-container h1 {
+    font-size: 3rem;
+  }
+  .welcome-container span {
+    font-size: 3.5rem;
+  }
+  .welcome-container p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .welcome-container {
+    width: 55vw;
+  }
+  .welcome-container h1 {
+    font-size: 3rem;
+  }
+  .welcome-container span {
+    font-size: 3.5rem;
+  }
+  .welcome-container p {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .welcome-container {
+    width: 50vw;
+  }
+  .welcome-container h1 {
+    font-size: 4rem;
+  }
+  .welcome-container span {
+    font-size: 3rem;
+  }
+  .welcome-container p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .welcome-container {
+    width: 40vw;
+  }
+  .welcome-container h1 {
+    font-size: 4rem;
+  }
+  .welcome-container span {
+    font-size: 3.4rem;
+  }
+  .welcome-container p {
+    font-size: 1.2rem;
+  }
 }
 
 /* animations */
