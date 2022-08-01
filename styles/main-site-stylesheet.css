@@ -50,21 +50,20 @@ aside {
   min-width: 250px;
   width: 20%;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
 }
 .profile-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 10%;
+  height: 5rem;
   margin-top: 1rem;
   overflow: hidden;
-  max-height: 30%;
-  transition: height 0.8s ;
-    position: relative;
+  max-height: 12rem;
+  transition: height 0.8s;
 }
 .profile {
-  background-color: rgb(26, 29, 39);
+  background-color: #1a1d27;
   width: 100%;
   height: 5rem;
   border-top-left-radius: 0.5rem;
@@ -74,7 +73,7 @@ aside {
   justify-content: flex-start;
   gap: 1rem;
   font-family: "Roboto Slab", serif;
-  color: rgb(206, 197, 197);
+  color: #cec5c5;
   cursor: pointer;
 }
 .profile img {
@@ -85,27 +84,83 @@ aside {
 }
 .info {
   background-color: rgb(26, 29, 39);
-  color: rgb(206, 197, 197);
+  color: #cec5c5;
   text-align: right;
   padding-right: 1rem;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 .info p {
-    cursor: pointer;
-    font-family: "Roboto Slab", serif;
+  cursor: pointer;
+  font-family: "Roboto Slab", serif;
 }
 section {
-  /* background-color: purple; */
+  background-color: purple;
   height: 100%;
   width: 100%;
-  border-left: 2px solid #8ac926;
+  border-left: 2px solid #4cac31;
 }
 
 .profile-height {
-  height: 30%;
+  height: 15rem;
   transition: height 0.8s;
 }
+.main-modules,
+.to-learn,
+.extras {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 2px solid #4cac31;
+  margin-top: 1rem;
+}
+.left-bottom {
+  width: 100%;
+  position: relative;
+  bottom: -4rem;
+}
+.head {
+  font-family: "Asap", sans-serif;
+  color: #4cac31;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.known,
+.learn,
+.git {
+  width: 100%;
+  height: auto;
+  background-color: #1a1d27;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8rem;
+  color: #cec5c5;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: transform 0.5s;
+}
+.known p,
+.learn p {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+.git a {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 1rem;
+  gap: 1rem;
+  font-family: "Roboto Slab", serif;
+  color: #cec5c5;
+  text-decoration: none;
+}
+.known:hover,
+.learn:hover,
+.git:hover {
+  transform: translateX(0.3rem);
+}
+
 .hidden {
   visibility: hidden;
 }
